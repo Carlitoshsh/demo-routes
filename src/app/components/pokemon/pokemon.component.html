@@ -1,0 +1,6 @@
+<h2>Pokémon Details</h2>
+<div *ngIf="pokemon">
+  <p><strong>Name:</strong> {{ pokemon.name }}</p>
+  <p><strong>Image:</strong></p>
+  <img [src]="pokemon.sprites.front_default" alt="Pokemon Image">
+</div>
