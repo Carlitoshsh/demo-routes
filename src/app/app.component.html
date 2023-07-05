@@ -2,6 +2,6 @@
 <nav>
   <a routerLink="/route1" routerLinkActive="active">Route 1</a>
   <a routerLink="/route2" [queryParams]="{id:23}" routerLinkActive="active">Route 2</a>
-  <a routerLink="/blog/23" routerLinkActive="active">Blog</a>
+  <a [routerLink]="['blog', 23]" routerLinkActive="active">Blog</a>
 </nav>
 <router-outlet></router-outlet>

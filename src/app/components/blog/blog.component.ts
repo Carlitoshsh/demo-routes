@@ -15,7 +15,7 @@ export class BlogComponent implements OnInit {
   ngOnInit(): void {
     // Call pokemon api
     this.route.params.subscribe(params => {
-      console.log(params['id']);
+      console.log(params);
 
     }
     );
